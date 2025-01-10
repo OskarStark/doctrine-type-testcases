@@ -1,5 +1,5 @@
 {
-    "name": "datana-gmbh/doctrine-type-testcases",
+    "name": "oskarstark/doctrine-type-testcases",
     "type": "library",
     "description": "Doctrine Type Testcases",
     "license": "MIT",
