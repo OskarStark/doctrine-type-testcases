@@ -3,7 +3,7 @@
 declare(strict_types=1);
 
 /*
- * This file is part of datana-gmbh/doctrine-type-testcases package.
+ * This file is part of oskarstark/doctrine-type-testcases package.
  *
  * (c) Datana GmbH <info@datana.rocks>
  *
@@ -11,7 +11,7 @@ declare(strict_types=1);
  * file that was distributed with this source code.
  */
 
-namespace Datana\Doctrine\Testcase;
+namespace OskarStark\Doctrine\Testcase;
 
 use Doctrine\DBAL\Platforms\AbstractPlatform;
 use Symfony\Component\Uid\AbstractUid;

@@ -9,11 +9,11 @@
 ### Installation
 
 ```bash
-composer require datana-gmbh/doctrine-type-testcases
+composer require oskarstark/doctrine-type-testcases
 ```
 
-[build-status-master-php]: https://github.com/datana-gmbh/doctrine-type-testcases/workflows/PHP/badge.svg?branch=master
-[coverage-status-master]: https://codecov.io/gh/datana-gmbh/doctrine-type-testcases/branch/master/graph/badge.svg
+[build-status-master-php]: https://github.com/oskarstark/doctrine-type-testcases/workflows/PHP/badge.svg?branch=master
+[coverage-status-master]: https://codecov.io/gh/oskarstark/doctrine-type-testcases/branch/master/graph/badge.svg
 
-[actions]: https://github.com/datana-gmbh/doctrine-type-testcases/actions
-[codecov]: https://codecov.io/gh/datana-gmbh/doctrine-type-testcases
+[actions]: https://github.com/oskarstark/doctrine-type-testcases/actions
+[codecov]: https://codecov.io/gh/oskarstark/doctrine-type-testcases

@@ -32,12 +32,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Datana\\Doctrine\\Testcase\\": "src/"
+            "OskarStark\\Doctrine\\Testcase\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Datana\\Doctrine\\Testcase\\Tests\\": "tests/"
+            "OskarStark\\Doctrine\\Testcase\\Tests\\": "tests/"
         }
     },
     "minimum-stability": "stable",
