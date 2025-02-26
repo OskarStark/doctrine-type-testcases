@@ -14,13 +14,12 @@ declare(strict_types=1);
 namespace OskarStark\Doctrine\Testcase;
 
 use Doctrine\DBAL\Types\Type;
+use PHPUnit\Framework\Attributes\Test;
 use PHPUnit\Framework\TestCase;
 
 abstract class TypeTestCase extends TestCase
 {
-    /**
-     * @test
-     */
+    #[Test]
     final public function nameMethod(): void
     {
         $type = static::createType();
