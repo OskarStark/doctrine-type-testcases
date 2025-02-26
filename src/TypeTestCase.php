@@ -26,12 +26,12 @@ abstract class TypeTestCase extends TestCase
         $type = static::createType();
 
         self::assertSame(
-            static::name(),
+            static::provideName(),
             $type->getName(),
         );
     }
 
     abstract protected static function createType(): Type;
 
-    abstract protected static function name(): string;
+    abstract protected static function provideName(): string;
 }
