@@ -1,7 +1,4 @@
 # vim: set tabstop=8 softtabstop=8 noexpandtab:
-
-
-
 .PHONY: static-code-analysis
 static-code-analysis: vendor ## Runs a static code analysis with phpstan/phpstan
 	symfony php vendor/bin/phpstan analyse --configuration=phpstan-default.neon --memory-limit=-1
