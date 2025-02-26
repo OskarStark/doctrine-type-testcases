@@ -14,13 +14,12 @@ declare(strict_types=1);
 namespace OskarStark\Doctrine\Testcase;
 
 use Doctrine\DBAL\Platforms\AbstractPlatform;
+use PHPUnit\Framework\Attributes\Test;
 use Symfony\Component\Uid\AbstractUid;
 
 abstract class UidTypeTestCase extends TypeTestCase
 {
-    /**
-     * @test
-     */
+    #[Test]
     final public function convertToPhpValue(): void
     {
         $type = static::createType();

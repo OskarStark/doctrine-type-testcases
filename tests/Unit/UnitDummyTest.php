@@ -13,13 +13,12 @@ declare(strict_types=1);
 
 namespace OskarStark\Doctrine\Testcase\Tests\Unit;
 
+use PHPUnit\Framework\Attributes\Test;
 use PHPUnit\Framework\TestCase;
 
 final class UnitDummyTest extends TestCase
 {
-    /**
-     * @test
-     */
+    #[Test]
     public function dummy(): void
     {
         self::assertTrue(true);
