@@ -43,8 +43,8 @@ jobs:
             - name: "Composer normalize"
               run: "composer normalize"
 
-            - name: "Check code style"
-              run: "composer cs-check"
+            - name: "Run friendsofphp/php-cs-fixer"
+              run: "PHP_CS_FIXER_IGNORE_ENV=1 vendor/bin/php-cs-fixer fix --diff --verbose"
 
     static-code-analysis:
         name: "Static Code Analysis"
@@ -70,8 +70,8 @@ jobs:
             - name: "Install dependencies with composer"
               uses: "ramsey/composer-install@1.3.0"
 
-            - name: "Static code analysis"
-              run: "composer phpstan"
+            - name: "Run a static code analysis with phpstan/phpstan and default configuration"
+              run: "vendor/bin/phpstan analyse --configuration=phpstan-default.neon --no-progress"
 
     tests:
         name: "Tests"
