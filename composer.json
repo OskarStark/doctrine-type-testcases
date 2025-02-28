@@ -1,8 +1,13 @@
 {
     "name": "oskarstark/doctrine-type-testcases",
-    "type": "library",
     "description": "Doctrine Type Testcases",
     "license": "MIT",
+    "type": "library",
+    "keywords": [
+        "doctrine",
+        "test",
+        "dev"
+    ],
     "authors": [
         {
             "name": "Oskar Stark",
@@ -23,13 +28,7 @@
         "phpstan/phpstan": "^1.0",
         "phpstan/phpstan-webmozart-assert": "^1.0"
     },
-    "config": {
-        "sort-packages": true,
-        "allow-plugins": {
-            "ergebnis/composer-normalize": true,
-            "phpstan/extension-installer": true
-        }
-    },
+    "minimum-stability": "stable",
     "autoload": {
         "psr-4": {
             "OskarStark\\Doctrine\\Testcase\\": "src/"
@@ -40,5 +39,11 @@
             "OskarStark\\Doctrine\\Testcase\\Tests\\": "tests/"
         }
     },
-    "minimum-stability": "stable"
+    "config": {
+        "allow-plugins": {
+            "ergebnis/composer-normalize": true,
+            "phpstan/extension-installer": true
+        },
+        "sort-packages": true
+    }
 }
