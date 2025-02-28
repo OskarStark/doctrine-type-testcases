@@ -24,10 +24,14 @@ abstract class TypeTestCase extends TestCase
     {
         $type = static::createType();
 
-        self::assertSame(
-            static::provideName(),
-            $type->getName(),
-        );
+        // getName() method is deprecated in doctrine/dbal 3 and removed in doctrine/dbal 4
+        if (!method_exists($type, 'getName')) {
+            $name = Type::getTypeRegistry()->lookupName($type);
+        } else {
+            $name = $type->getName();
+        }
+
+        self::assertSame(static::provideName(), $name);
     }
 
     abstract protected static function createType(): Type;
