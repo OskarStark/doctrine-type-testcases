@@ -26,7 +26,7 @@ abstract class TypeTestCase extends TestCase
 
         // getName() method is deprecated in doctrine/dbal 3 and removed in doctrine/dbal 4
         if (!method_exists($type, 'getName')) {
-            $name = $type::getTypeRegistry()->lookupName($type);
+            $name = Type::getTypeRegistry()->lookupName($type);
         } else {
             $name = $type->getName();
         }
